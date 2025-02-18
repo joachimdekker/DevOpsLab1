@@ -1,15 +1,15 @@
 openapi: 3.0.0
 info:
-  title: Simple Inventory API
-  description: This is a simple API
+  title: Student Register API
+  description: This simple API allows for modification of the student register, adding and removing students.
   contact:
-    email: you@your-company.com
+    email: joachim.dekker@students.uva.nl
   license:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
   version: 1.0.0
 servers:
-- url: http://localhost/tutorial/1.0.0
+- url: http://localhost:8080/tutorial/1.0.0
   description: Default server
 paths:
   /student/{student_id}:
