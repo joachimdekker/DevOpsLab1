@@ -1,5 +1,4 @@
-﻿version: '3'
-services:
+﻿services:
   student_service:
     image: joachimdekker/student_service
     restart: unless-stopped
