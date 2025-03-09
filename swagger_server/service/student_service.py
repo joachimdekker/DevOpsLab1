@@ -24,7 +24,7 @@ def add(student=None):
 
 def get_by_id(student_id=None):
     # Convert the student_id to ObjectId and retrieve the document
-    student = student_collection.find_one(ObjectId(student_id))
+    student = student_collection.find_one({"_id": ObjectId(student_id)})
 
     if not student:
         return 'not found', 404

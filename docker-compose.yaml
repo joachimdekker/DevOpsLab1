@@ -1,6 +1,6 @@
 ﻿services:
   student_service:
-    image: joachimdekker/student_service
+    image: joachimdekker/student_service:latest
     restart: unless-stopped
     depends_on:
       - mongo
