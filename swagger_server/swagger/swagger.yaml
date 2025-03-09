@@ -26,7 +26,6 @@ paths:
         explode: false
         schema:
           type: string
-          format: uuid
       responses:
         "200":
           description: Successful operation
@@ -52,8 +51,7 @@ paths:
         style: simple
         explode: false
         schema:
-          type: number
-          format: integer
+          type: string
       responses:
         "200":
           description: Succesfully deleted student
@@ -80,7 +78,6 @@ paths:
             application/json:
               schema:
                 type: string
-                format: uuid
                 x-content-type: application/json
         "400":
           description: "invalid input, object invalid"
@@ -135,4 +132,3 @@ components:
       example:
         grade: 0.8008282
         subject_name: DevOps
-
