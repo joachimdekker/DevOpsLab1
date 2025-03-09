@@ -29,8 +29,10 @@ def get_by_id(student_id=None):
     if not student:
         return 'not found', 404
 
-    # Add a student_id field to the document for consistency
-    student['student_id'] = str(student['_id'])
+    # Convert the _id field to a string, since
+    # otherwise it throws an JSON serializer error
+    # since ObjectId cannot be serialized for some reason...
+    student['_id'] = str(student['_id'])
     return student
 
 def delete(student_id=None):
